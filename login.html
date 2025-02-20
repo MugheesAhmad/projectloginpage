@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f9f9f9;
+        }
+
+        .login-container {
+            width: 350px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 35px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+            font-size: 16px;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-bottom: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #36d1dc, #5b86e5, #e93dfb);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            opacity: 0.8;
+        }
+
+        .social-login {
+            margin: 40px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .social-icons .facebook {
+            background: #3b5998;
+        }
+
+        .social-icons .twitter {
+            background: #1da1f2;
+        }
+
+        .social-icons .google {
+            background: #db4437;
+        }
+
+        .signup {
+            margin-top: 100px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: rgba(0, 0, 0, 0.562);
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .name {
+            margin-left: 3px;
+            margin-top: -21px;
+            position: absolute;
+            z-index: 100;
+
+        }
+
+        .input-group2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label class="name" for="">Username</label>
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Type your username">
+        </div>
+        <div class="input-group">
+            <div class="input-group2">
+                <label class="name" for="">Password</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Type your password">
+            </div>
+        </div>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button class="login-btn"><b>LOGIN</b></button>
+        <div class="social-login">Or Sign Up Using</div>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="signup">Or Sign Up Using </br> <a href="#" class="signupp">SIGN UP</a></div>
+    </div>
+</body>
+
+</html>
